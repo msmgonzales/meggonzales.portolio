@@ -1,0 +1,501 @@
+@media  (max-width: 415px) {
+    nav {
+        padding: 20px 30px;
+        height: 65px;
+        flex-direction: column;
+    }
+
+    nav h3 {
+        font-size: 1.5rem;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .navbar li {
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .navbar-container {
+        background-color: var(--backgroundColor);
+        
+        transition-property: all;
+        transition-duration: 0.5s;
+        width: 100vw;
+        opacity: 0;
+    }
+
+    .navbar-container.active {
+        opacity: 1;
+        height: 100vh;
+    }
+
+
+    .navbar-logo {
+        width: 100%;
+    }
+    
+    .mode {
+        padding-right: 15px;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+        color: var(--whiteText);
+    } 
+
+    hr {
+        display: none;
+    }
+    
+    .home {
+        /* height: 100vh; */
+        row-gap: 20px;
+    }
+
+    .my-profile {
+        /* padding-top: 10px; */
+        height: 150px;
+        width: 150px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+    .introduction {
+        width: 70%;
+    }
+    
+    #about {
+        /* height: calc(100vh - 110px); */
+        padding: 70px 25px 0 25px; 
+    }
+
+    .about-container {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+    .overview {
+        flex-direction: column;
+    }
+
+    .skillset {
+        justify-content: center;
+        gap: 5px 30px;
+        flex-wrap: wrap;
+        /* flex-basis: auto; */
+        height: 10%;
+        
+    }  
+    
+    .skill {
+        width: 20%;
+    }
+
+    .skill img {
+        height: 44px;
+    }
+        
+    #projects {
+        /* height: 100vh; */
+        padding: 70px 25px 0 25px; 
+    }
+    
+    #contact {
+        /* height: 100vh; */
+        padding: 20px 25px; 
+    }
+
+    .project-container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .stack {
+        margin-top: 1rem;
+    }
+
+    .project-img img {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .carousel-indicators {
+        bottom: -10px;
+        margin-bottom: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-container img {
+        display: none;
+    }
+}
+
+@media (min-width: 667px) {
+    nav {
+        padding: 20px 40px;
+        height: 65px;
+        flex-direction: column;
+    }
+    nav h3 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .navbar li {
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .navbar li a {
+        width: 100%;
+    }
+
+    .navbar-container {
+        background-color: var(--backgroundColor);
+        
+        transition-property: all;
+        transition-duration: 0.5s;
+        width: 100vw;
+        opacity: 0;
+
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar-container.active {
+        opacity: 1;
+        height: 100vh;
+    }
+
+    .navbar-logo {
+        width: 100%;
+    }
+    .mode {
+        padding-right: 15px;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+        color: var(--whiteText);
+    }
+
+    hr {
+        display: none;
+    }
+
+    .home {
+        /* height: 100vh; */
+        row-gap: 10px;
+    }
+
+    .my-profile {
+        /* padding-top: 10px; */
+        height: 150px;
+        width: 150px;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .introduction {
+        width: 70%;
+    }
+
+    #about, #projects, #contact {
+        /* height: calc(100vh - 110px); */
+        padding: 70px 25px 0 25px;  
+    }
+    
+    .about-container {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .overview {
+        flex-direction: column;
+    }
+
+    .skillset {
+        justify-content: flex-start;
+        gap: 5px 30px;
+        flex-wrap: wrap;
+    }  
+
+    .skill {
+        width: 15%;
+    }
+
+    .skill img {
+        height: 44px;
+    }
+
+    .project-container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stack {
+        margin-top: 1rem;
+    }
+
+    .project-img img {
+        padding: 20px;
+        width: 300px;
+    }
+    
+    .contact-container {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 10px 30px;
+    }
+    
+    .contact-container img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 684px) {
+    #about, #projects {
+        /* height: calc(100vh - 110px); */
+        padding: 70px 25px 0 25px; 
+    }
+    
+    #contact {
+        /* height: 100vh; */
+        padding: 70px 25px; 
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    
+    .contact-container form {
+        width: 50%;
+    }
+
+    .contact-container img {
+        width: 300px;
+    }
+    
+}
+
+@media  (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        padding: 0px 55px;
+        height: 80px;
+    }
+      
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px;
+        padding-top: 0px;
+    }
+
+    .navbar-logo {
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: none;
+        color: var(--whiteText);
+    }
+
+    .home {
+        height: 100vh;
+        row-gap: 10px;
+    }
+
+    .my-profile {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .title {
+        font-size: 4rem;
+    }
+
+    .introduction {
+        width: 30%;
+    }
+    
+    #about {
+        height: calc(100vh - 110px);
+        padding: 100px 100px; 
+        margin-bottom: 100px;
+    }
+
+    .about-container {
+        margin-top: 40px;
+        margin-left: 200px;
+    }
+
+    .overview {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .skillset {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: var(--greyText);
+        column-gap: 50px;
+    }   
+    
+    .skill {
+        width: 6%;
+    }
+
+    .skill img {
+        height: 40px;
+    }
+        
+    #projects {
+        height: 100vh;
+        padding: 100px 60px 100px 60px; 
+    }
+    
+    #contact {
+        height: 100vh;
+        padding: 100px 100px; 
+    }
+
+    .project-container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 20px 40px;
+    }
+    
+    .project-info {
+        width: 40%;
+    }
+
+    .project-list {
+        padding: 0 40px 0 40px;
+    }
+
+    .stack {
+        margin-top: 3rem;
+    }
+
+    .project-title h1 {
+        font-size: 3rem;
+    }
+    
+    .project-img {
+        align-self: flex-end;
+        text-align: right;
+    }
+    
+    .project-img img {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    .carousel-indicators {
+        bottom: -30px;
+        margin-bottom: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact-container img {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1495px) {
+    .introduction {
+        width: 20%;
+    }
+    
+    .title {
+        font-size: 6rem;
+    }
+
+    .about-container {
+        margin-left: 300px;
+    }
+
+    .overview {
+        gap: 50px;
+    }
+    
+    .skill img {
+        height: 10%;
+    }
+    
+    .project-title h1 {
+        font-size: 4rem;
+    }
+    
+    .project-img img {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contact-container {
+        justify-content: baseline;
+    }
+    
+    .contact-container img {
+        width: 450px;
+    }
+}
